@@ -68,6 +68,9 @@
             me.values = temp.data._embedded.orders;
             
             me.newValue = {
+                'productId': '',
+                'qty': 0,
+                'address': '',
             }
         },
         methods:{

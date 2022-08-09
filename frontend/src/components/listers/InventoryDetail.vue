@@ -5,6 +5,9 @@
         </v-card-title>
 
         <v-card-text>
+            <div>
+                <Number label="Stock" v-model="item.stock" :editMode="editMode" @change="change" />
+            </div>
         </v-card-text>
 
         <v-card-actions>

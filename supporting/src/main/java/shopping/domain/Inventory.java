@@ -16,6 +16,8 @@ public class Inventory {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    private Integer stock;
+
     @PostPersist
     public void onPostPersist() {
         InventoryDecreased inventoryDecreased = new InventoryDecreased(this);
